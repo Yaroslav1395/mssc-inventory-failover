@@ -12,7 +12,7 @@ import java.util.Collections;
 import java.util.UUID;
 
 @Component
-public class InventoryHandler {\
+public class InventoryHandler {
 
     /**
      *
