@@ -12,7 +12,13 @@ import java.util.Collections;
 import java.util.UUID;
 
 @Component
-public class InventoryHandler {
+public class InventoryHandler {\
+
+    /**
+     *
+     * @param serverRequest
+     * @return
+     */
     public Mono<ServerResponse> listInventory(ServerRequest serverRequest) {
         return ServerResponse.ok()
                 .contentType(MediaType.APPLICATION_JSON)
