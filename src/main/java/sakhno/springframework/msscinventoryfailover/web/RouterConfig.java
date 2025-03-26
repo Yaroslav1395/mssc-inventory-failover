@@ -12,6 +12,11 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 
 @Configuration
 public class RouterConfig {
+    /**
+     *
+     * @param inventoryHandler
+     * @return
+     */
     @Bean
     public RouterFunction inventoryRoute(InventoryHandler inventoryHandler) {
         return route(GET("/inventory-failover").and(accept(MediaType.APPLICATION_JSON)), inventoryHandler::listInventory);
