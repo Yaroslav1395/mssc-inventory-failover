@@ -13,6 +13,12 @@ import java.util.UUID;
 
 @Component
 public class InventoryHandler {
+
+    /**
+     * Это обработчик Spring WebFlux, который асинхронно возвращает список остатков пива.
+     * @param serverRequest - запрос
+     * @return - ответ c остатками
+     */
     public Mono<ServerResponse> listInventory(ServerRequest serverRequest) {
         return ServerResponse.ok()
                 .contentType(MediaType.APPLICATION_JSON)
